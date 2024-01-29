@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juspay.in</title>
+    <style>
+        
+* ,:after,:before {
+    box-sizing: inherit;
+}
+
+body {
+margin: 0;
+padding: 0;
+background-color: rgba(0, 0, 0, 0.862);
+position: relative;
+display: block;
+}
+
+.navbar {
+background-color:rgb(0, 0, 0,);
+color:white
+padding: 10px;
+}
+
+.nav-list {
+list-style: none;
+display: flex;
+justify-content: space-around; /* Adjust as needed: space-between, space-evenly, etc. */
+}
+
+.nav-list li {
+margin: 0;
+}
+
+.nav-list a {
+text-decoration: none;
+color: white;
+padding: 10px;
+font-size: x-large;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Optional: Style hover effect for links */
+.nav-list a:hover {
+background-color:black;
+}
+.navbar >.nav-list >li >a >img {
+height: 50px;
+width: 200px;
+
+}
+
+.india{
+box-sizing: border-box;
+color: rgb(104, 108, 176);
+padding: 100px;
+font-size:70px;
+margin: -10px 0 0 -10px;
+}
+span{
+margin: 0px;
+padding: 0px;
+}
+span h1{
+box-sizing: border-box;
+color: white;
+font-size: 100px;
+margin: -90px 0 0 70px;
+
+grid-column-start: 1;
+letter-spacing: -.03em;
+margin-bottom: 0;
+}
+span h5{
+color: white;
+box-sizing:border-box;
+margin: 0px 0 0 80px;
+
+}
+.inner-right-container > img{
+}
+.container > span{
+color: white;
+font-size: x-large;
+}
+.container{
+display: flex;
+justify-content: space-around;
+}
+/* button{
+font-size: 30px;
+background-color: #5d0fca;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+
+}
+button:hover {
+background-color: #1c4069;
+}
+#buttons{
+
+padding: 18px;
+margin: 20px 0 0 70px;
+padding-bottom: 20px;
+} */
+#buttons{
+background-color: #05f;
+border-radius: 15px;
+border: none;
+font-weight:900;
+font-size: large;
+/* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+padding: 15px;
+margin: 20px;
+margin-left: 90px;
+color:white;
+}
+.container2{
+background-color:rgb(255, 255, 255,3);
+padding: 100px;
+height: 250px
+}
+.container2 .container2_headline {
+color: #082449;
+font-size: 2.125rem;
+grid-column: 1/span 12;
+letter-spacing: -.03em;
+padding-bottom: 3rem;
+text-align: center;
+margin-top: -10px;
+
+}
+.section1_list1{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: -50px;
+}
+.imagees1{
+align-items: center;
+display: flex;
+flex-direction: column;
+grid-column: span 2;
+height: 64px;
+justify-content: center;
+position:static;
+width: 184px;
+margin: 20px;
+padding: 20px;
+}
+.section2 {
+width: 1520px;
+height: 890px;
+box-sizing: border-box;
+}
+.container3{
+background-color:rgb(240, 248, 255);
+width: 100%;
+min-height: 100px; /* Set a minimum height to prevent the div from collapsing */
+border: none /* Optional: Add border for visibility */
+padding: 10px; /* Optional: Add padding for spacing */
+box-sizing: border-box; /* Include padding and border in the element's total width and height */
+overflow: hidden;
+}
+.headline{
+color: #082449;
+font-family: var(--font-header);
+font-size: 4rem;
+letter-spacing: 2px;
+letter-spacing: -.03em;
+line-height: 1.1;
+margin: 1em  ;
+}
+.icon1{
+width: 100%;
+}
+
+.continer4{
+    /* display: flex; */
+}
+.headline2{
+color: #fff;
+font-size: 4rem;
+letter-spacing: -.03em;
+line-height: 1.1;
+margin-bottom: 2rem;
+margin: 100px;
+font-weight: bold;
+}
+.small_container{
+    display: flex;
+    flex-direction: column;
+}
+.section3_img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px;
+    /* margin-top: -50px; */
+    height:180px;
+
+}
+
+.diagram1{
+    margin: 40px;
+}
+
+.head > h3 {
+    color: rgb(255, 255, 255);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-family: var(--font-header);
+}
+.head > h2 {
+    color: rgb(128, 163, 234);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+    font-family: var(--font-header);
+}
+.head > P {
+    color: #fff;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.9;
+}
+.dotted{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 130px;
+    word-spacing: 10px;
+}
+.container5{
+    grid-column-end: 13;
+    grid-column-start: 2;
+    display:flex;
+    grid-row-end: 3;
+    grid-row-start: 2;
+    padding: 90px;
+}
+.section4{
+    grid-column-end: 8;
+    grid-column-start: 1;
+    margin-right: 90px;
+}
+
+.section4 > h2 {
+    color: #8b9ec4;
+  font-size: 4rem;
+  letter-spacing: -.03em;
+  font-family: var(--font-header);
+  font-style: normal;
+  text-decoration: none;
+}
+.section4 > p {
+    color: #fff;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.9;
+  padding-right: 3rem;
+  margin: 0 0 1.45rem;
+  padding: 0;
+}
+
+.section4 > button {
+        background-color: #fff;
+        margin-top: 1rem;
+        border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: 14px 20px;
+    color: #000;
+}
+.section4 a {
+    text-decoration: none;
+}
+
+.section5{
+    margin: 70px;
+
+}
+.section5 >  a >img {
+    margin: 30px;
+    margin-top: 10px;
+    padding: px;
+    height: 350px;
+    width: 360px;
+}
+
+@media only screen and (max-width: 1460px) {
+.container6
+{
+    grid-column-end: 10;
+    grid-column-start: 2;
+  }
+}
+.container6{
+    background-color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    max-width:100%
+    width:100%;
+}
+.h2{
+    color: #082449;
+  font-size: 4rem;
+  letter-spacing: -.03em;
+  font-family: var(--font-header);
+  /* line-height: 1.1; */
+  /* margin: 0 0 1.45rem; */
+  padding: 60px;
+  text-rendering  : optimizeLegibility;
+  font-weight: 700;
+}
+.para_box{
+    background-color: var(--color-white1);
+    box-shadow: 20px 20px 130px 13px rgba(26, 20, 52, 0.1);
+    border-radius: 18px;
+    justify-content: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    
+  
+
+}
+.parabox1{
+    padding: 40px;
+    margin: 40px;
+}
+.para1 {
+  font-family: Inter V;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 160%;
+  color: #234ea4;
+  margin: 0 0 1.45rem;
+  padding: 0;
+}
+.para2{
+  font-family: Inter V;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 160%;
+  margin: 0 0 1.45rem;
+  padding: 0;
+}
+.para3{
+    text-align: right;
+    justify-content: right;
+    font-family: Inter V;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.icons >img {
+    margin: 10px;
+}
+.developer{
+    margin-left: 80px;
+
+}
+.developer1{
+    color: #082449;
+    font-family: var(--font-header);
+    font-size: 6rem;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+}
+.developer2{
+    color: #082449;
+    font-family: var(--font-header);
+    font-size: 6rem;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    color: #8b9ec4;
+  margin-top: -1.2em;
+
+}
+.information{
+    display: flex;
+    margin: 6%;
+}
+.information > .photo {
+    height: 460px;
+    width: 650px;
+}
+.detail_box{
+    margin-top: -35px;
+    margin-right: 10px;
+    padding: 30px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.small_information1{
+    align-items: center;
+    color: var(--color-black1);
+    font-family: var(--font-body);
+    text-align: left;
+    margin: 50px;
+    }
+.small_information2{
+    align-items: center;
+    color: var(--color-black1);
+    font-family: var(--font-body);
+    text-align: left;
+    margin: 50px;
+
+}
+.small_information1 > .detail_box2{
+    font-weight: bolder
+}
+
+.button3{
+    background-color: #1865ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 150px;
+    margin-left: -100px;
+    cursor: pointer;
+    
+}
+.navbar1{
+    background-color: rgb(236, 233, 233);
+    display: flex;
+    margin-top: -99px;
+
+
+}
+.nav_list1{
+    margin:90px;
+}
+.nav_list2{
+    margin: 90px;
+
+}
+.nav_list3{
+    margin: 90px;
+
+}
+.nav_list4{
+    margin: 90px;
+
+}
+.nav_list1 li  {
+    font-weight: bolder;
+    font-size:large;
+    padding: 10px;
+    list-style: none;
+    /* text-align:center; */
+}
+.nav_list1 li a{
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5;
+}
+
+.nav_list2 li {
+    font-weight: bolder;
+    font-size:large;
+    padding: 10px;
+    list-style: none;
+    /* text-align:center; */
+}
+.nav_list2 li a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5;
+}
+
+.nav_list3 li {
+    font-weight: bolder;
+    font-size:20px;
+    padding: 10px;
+    list-style: none;
+    /* text-align:center; */
+}
+.nav_list3 li a{
+    color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5;
+}
+
+.nav_list4 li {
+    font-weight: bolder;
+    font-size:20px;
+    padding: 10px;
+    list-style: none;
+    /* text-align:center; */
+}
+.nav_list4 li a{
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5;
+}
+.navbar1 ul h3 {
+    font-family: var(--font-header);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    margin-bottom: .4em;
+    font-style: normal;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#"><img src="Juspay Logo.png" alt=""></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Global</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="inner-left-container">
+         <h2 class="india">India's</h2>
+        <span> <h1>Payments <br> Operating <br> System</h1></span>
+        <span><h5>we unify payment gatway to give you a seamless ,secure, 
+            <br> reliable, end-to-end ,enterprise-grade payment stack to achive higher <br> revenue at lower cost</h5></span>
+            <button id="buttons">Search Details</button>
+        </div>
+        <div class="inner-right-container">
+            <img src="imagee.png" alt="" height="450">
+        </div>
+    </div>
+    <section class="container2">
+        <h2 class="container2_headline">
+            Trusted by leading compaines
+        </h2>
+        <section class="section1_list1">
+            <a href="https://myntra.com" ><img class="imagees1" src="myntra.png" alt=""> </a>
+            <a href="https://tatacliq.com" ><img class="imagees1" src="tata.png" alt=""> </a>
+            <a href="https://unacademy.com" ><img class="imagees1" src="unacademy.png" alt=""> </a>
+            <a href="https://snapdeal.com" ><img class="imagees1" src="snapdeal.png" alt=""> </a>
+            <a href="https://bookmyshow.com" ><img class="imagees1" src="book_my_show.png" alt=""> </a>
+            <a href="https://urbancompany.com" ><img class="imagees1" src="urban_company.png" alt=""> </a>
+            <a href="https://axisbank.com" ><img class="imagees1" src="axisbank.png" alt=""> </a>
+            <a href="https://olacabs.com" ><img class="imagees1" src="ola.png" alt=""> </a>
+        </section>
+    </section>
+    <div class="container3">
+        <h1 class="headline">Bulk of India's <br>
+            Mobile Payments <br>
+            Go through Juspay.</h1>
+         <img class="icon1" src="final_image.png" alt="">
+    </div>
+
+    <div class="container4">
+        <div class="headline2">
+            End-to-End Payments Stack <br>
+            To accelerate Your 10x growth
+        </div>
+        <div class="section3_img1">
+            <div class="div1">
+            <img class="diagram1" src="diagram1.png" alt="">
+        </div>
+            <div class="head">
+                <h3>NATIVE SDK WITH 1-CLICK EXPERIENCE</h3>
+                <h2>Superior UX to improve your NPS</h2>
+                <P>Fully managed infrastructure and automated workflows designed for <br>scale, security and reliability</P>
+            </div>
+        
+        </div>
+
+        <div class="section3_img1">
+            <div class="div1">
+            <img class="diagram1" src="diagram1.png" alt="">
+        </div>
+            <div class="head">
+                <h3>ORCHESTRATION PLATFORM</h3>
+                <h2>5-10% higher conversions</h2>
+                <P>100+ integrations, intelligent routing, automatic retries, optimized with data from billions of transactions</P>
+            </div>
+        
+        </div>
+
+
+        <div class="section3_img1">
+            <div class="div1">
+            <img class="diagram1" src="diagram1.png" alt="">
+        </div>
+            <div class="head">
+                <h3>END TO END SOLUTIONS FOR SCALE</h3>
+                <h2>Reduce your payment OPS by 80%</h2>
+                <P>Fully managed infrastructure and automated workflows designed for scale, security and reliability</P>
+            </div>
+        
+        </div>
+        <div class="dotted">-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -    -   -   -   -    -   -   -    -   -   -  -   -   -   -   -   -   -   -   -   -    -   -   -   -   -   -   -   -   -   -   -   -    -  
+
+        </div>
+
+       <div class="container5">
+            <div class="section4">
+                    <h2>Explore Our <br> Products</h2>
+                    <p>A suite of customized, end-to-end solutions to <br> take care of all your payments needs.</p>
+                    <button><a href="https://juspay.in/products/">Explore</button></a>
+            </div>
+
+            <div class="section5">
+                <a href="https://juspay.in/products/#hypersdk"> <img src="box1.png" alt=""></a>
+                <a href="https://juspay.in/products/#checkout"> <img src="box2.png" alt=""></a>
+                <a href="https://juspay.in/products/#upifullstack"> <img src="box3.png" alt=""></a>
+                <a href="https://juspay.in/products/#tokenizationsection"> <img src="box4.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+       <div class="container6">
+        <h2 class="h2">Success Stories</h2>
+        <div class="para_box">
+            <div class="parabox1">
+                <p class="para1"> Swiggy and Juspay have been working togather long term on unlocking these customer satisfaction metrices. we integrated with juspay back in 2016 and till date continues to use juspay payment product
+                </p>
+                <p class="para2">
+                Our term have always work together a better payment experience for our custormers. swiggy conversion rates are better benchmark for the industry and juspay has been a key ally for us in the jurney.
+                </p>
+                <h3 class="para3">Vikrant Lele <br> Director Finance <br> Swiggy</h3>
+                <div class="icons">
+                    <img class="first" src="icon1.png" alt=""> 
+                    <img class="first" src="icon2.png" alt="">
+                    <img class="first" src="icon3.png" alt="">
+                    <img class="first" src="icon4.png" alt="">
+                    <img class="first" src="icon5.png" alt="">
+                    <img class="first" src="icon6.png" alt="">
+                </div>
+            </div>
+        </div>
+            <div class="developer">
+                <h2 class="developer1">For Developers.</h2>
+                <h2 class="developer2">By Developers.</h2>
+            </div>
+
+            <div class="information">
+                <img class="photo" src="information.png" alt="">
+
+                <div class="detail_box">
+                    <p class="detail_box1">We believe `Code` can solve payments for the next billion. So <br> we obsess over eliminating complexities, providing elegant <br>abstractions that scale reliably.</p>
+                    <div class="small_information1">
+                        <h4 class="detail_box2">dsl
+                            Domain Specific Languages [DSL]</h4>
+
+                            <p class="detail_box3">Our DSLs allow you to write business logic like a narrative.</p>
+                    </div>
+                    <div class="small_information2">
+                        <h4 class="detail_box4">Function Reactive Programming (FRP)</h4>
+                    
+
+                        <p class="detail_box5">Juspay’s stack provides composable, robust abstractions. Flexible & modular.</p>
+                    </div>
+
+                    <a href="https://juspay.in/tech/"><button class="button3">Know More</button></a>
+                </div>
+            </div>
+        </div>
+            <nav class="navbar1">
+                <ul class="nav_list1">
+                    <h3>Company</h3>
+                    <li><a href="https://juspay.in/about/">About us</a></li>
+                    <li><a href="https://juspay.in/tech/">Tech</a></li>
+                    <li><a href="https://juspay.in/careers/">Carrier</a></li>
+                    <li><a href="https://juspay.in/contact/">Contect</a></li>
+                    <li><a href="https://juspay.in/newsroom/">Newsroom</a></li>
+                </ul>
+                <ul class="nav_list2">
+                    <h3>products</h3>
+                    <li><a href="https://juspay.in/products/#hypersdk">Hyper DSK</a></li>
+                    <li><a href="https://juspay.in/products/#checkout">Express Checkout</a></li>
+                    <li><a href="https://juspay.in/products/#tokenizationsection">Tikenization</a></li>
+                    <li><a href="https://juspay.in/products/#upifullstack">UPI Full Stack</a></li>
+                    <li><a href="https://juspay.in/about/#ecosystem-products">Ecosystem Products</a></li>
+                    <li><a href="https://juspay.in/hypercredit/">Hypercredit</a></li>
+                    <li><a href="https://juspay.in/hypercheckout">HyperCheckout</a></li>
+                </ul>
+                <ul class="nav_list3">
+                    <h3>Resources</h3>
+                    <li><a href="https://portal.juspay.in/?redirect=ops-dashboard">Merchant Home</a></li>
+                    <li><a href="https://docs.juspay.in/api-reference/docs/express-checkout/introduction">API Documentation</a></li>
+                    <li><a href="https://juspay.in/blog">Blog</a></li>
+                </ul>
+                <ul class="nav_list4">
+                    <h3>Compliance</h3>
+                    <li><a href="https://juspay.in/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://juspay.in/terms/">Terms of Service</a></li>
+                    <li><a href="https://docs.juspay.in/?category=checkout">FAQ</a></li>
+                    <li><a href="https://juspay.in/vulnerability-disclosure-policy/">Vulnerability Disclosure</a></li>
+                    <li><a href="https://juspay.in/payment-aggregation/">Payment Aggregation</a></li>
+                </ul>
+            </nav>
+
+</body>
+</html>
